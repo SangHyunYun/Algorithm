@@ -100,9 +100,13 @@ def q1():
         if result[i]:
             print(i)
 
+[1, 2, 3]
+# 원소 중복 X 순서 상관 X ==> [1, 2], [1, 3], [2, 3]
 from itertools import combinations
+# 원소 중복 X 순서 상관 O ==> [1, 2], [1, 3], [2, 1], [2, 3], [3, 1], [3, 2]
 from itertools import permutations
-from itertools import product
+# 원소 중복 O 순서 상관 O ==> [1, 1], [1, 2], [1, 3], [2, 1], [2, 2], [2, 3], [3, 1], [3, 2], [3, 3]
+from itertools import product # 중복 포함
 
 def q2():
     n, m = 4, 6
